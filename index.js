@@ -7,13 +7,9 @@ import userRouter from "./Routers/userRouter.js";
 import boardRouter from "./Routers/boardRouter.js";
 import sectionRouter from "./Routers/sectionRouter.js";
 import taskRouter from "./Routers/taskRouter.js";
-import path from "path";
-import { fileURLToPath } from "url";
+
 
 dotenv.config();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 
@@ -22,8 +18,6 @@ app.use(cors({
   origin: "*",
   credentials: true,  
 }));
-const uploadsDirectory = path.join(__dirname, '../uploads');
-app.use('/uploads', express.static(uploadsDirectory));
 
 connectDB();
 
