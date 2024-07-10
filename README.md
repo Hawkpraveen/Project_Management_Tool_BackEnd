@@ -67,8 +67,8 @@
 ### URL - /api/task/create-task/:sectionId
 ### Method - POST
 
-###➡️ Get All Tasks
-###URL - /api/task/get-all-tasks
+### ➡️ Get All Tasks
+### URL - /api/task/get-all-tasks
 ### Method - GET
 
 ### ➡️Edit Task
